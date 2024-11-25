@@ -11,6 +11,7 @@ import java.security.SecureRandom;
 @Path("/account")
 public class NetBanking {
 
+    //method to return random number of type double
     @GET
     @Produces(MediaType.TEXT_PLAIN)
     public double getBalance(@QueryParam("accountNo") String accountNo) {
