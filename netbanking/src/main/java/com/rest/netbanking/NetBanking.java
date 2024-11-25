@@ -14,8 +14,8 @@ public class NetBanking {
     @GET
     @Produces(MediaType.TEXT_PLAIN)
     public double getBalance(@QueryParam("accountNo") String accountNo) {
-        SecureRandom random = new SecureRandom();
-        double balance = random.nextDouble(239999);
+       SecureRandom random = new SecureRandom();
+        double balance = random.nextDouble();
         return balance;
     }
 }
